@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Plus Jakarta Sans";
+}
+main{
+    padding-top: 40px;
+}
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.logo {
+	width: 148px;
+	margin-top: 40px;
+	
+}
+.logo a {
+	color: #3563e9;
+}
+
+.form {
+	position: relative;
+	margin-top: 40px;
+}
+.form .fa-search {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	color: #9ca3af;
+}
+.form span {
+	position: absolute;
+	right: 17px;
+	top: 10px;
+	padding: 2px;
+	border-left: 1px solid #d1d5db;
+}
+.left-pan i {
+	padding-left: 10px;
+}
+.form-input {
+	width: 492px;
+	height: 44px;
+	text-indent: 33px;
+	border-radius: 30px;
+	border: 1px solid #9ca3af;
+}
+
+.form-input:focus {
+	box-shadow: none;
+	border: none;
+}
+.addToCard{
+	margin-top: 44px;
+	border: none;
+	background-color: skyblue;
+	border-radius: 10px;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -2%;
+font-weight: 600;
+padding: 10px;
+}
+.addToCard a{
+			align-items: center;
+			justify-content: center;
+		color: #3563e9;
+		}
+.icons {
+	margin-top: 40px;
+	display: flex;
+	gap: 20px;
+	margin-right: 60px;
+}
+.heart__button {
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+	border: 1px;
+	border-radius: 90px;
+	opacity: 80%;
+}
+
+.heart__button i {
+	align-items: center;
+	font-size: 24px;
+}
+.profile__button {
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+	border: 1px;
+	border-radius: 90px;
+	opacity: 80%;
+}
+.profile__button i {
+	align-items: center;
+	font-size: 24px;
+}
+
+.RentalCardivs {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+.OneRentalCar {
+	position: relative;
+	background-color: #54a6ff;
+	border-radius: 10px;
+	width: 640px;
+	height: 360px;
+}
+.OneRentalCar img {
+	position: absolute;
+	top: 0;
+}
+.elements {
+	width: 284px;
+	height: 160px;
+	display: block;
+	margin-left: 20px;
+	color: white;
+	font-weight: 600;
+	line-height: 48px;
+	gap: 16px;
+    margin-top: 20px;
+}
+.elements button {
+	position: absolute;
+	width: 120px;
+	background-color: #3563e9;
+	height: 44px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -2%;
+	align-items: center;
+	font-weight: 600;
+}
+.elements h3 {
+	font-size: 32px;
+	letter-spacing: 1px;
+}
+.elements p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: white;
+
+}
+.SecondRentalCar {
+	position: relative;
+	background-color: #3563e9;
+	border-radius: 10px;
+	width: 640px;
+	height: 360px;
+}
+.SecondRentalCar  img {
+	position: absolute;
+	top: 0;
+}
+
+.elements .secondbutton {
+	position: absolute;
+	width: 120px;
+	background-color: #54a6ff;
+	height: 44px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -2%;
+	align-items: center;
+	font-weight: 600;
+	gap: 8px;
+}
+#filtersSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.textupperdiv {
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.textupperdiv p{
+    color: black;
+
+}
+.filters{
+	width: 582px;
+	height: 136px;
+	border-radius: 10px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.date h4{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.items {
+	margin-left: 20px;
+	display: flex;
+	gap: 70px;
+	align-items: center;
+}
+.itemsicon {
+	display: flex;
+}
+
+.filtericon button{
+		margin-top: 30px;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+}
+.locationsText {
+    color: black;
+	font-weight: 700;
+	font-size: 16px;
+}
+.itemsIconText{
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 15.12px;
+	color: #90A3BF;
+	;
+}
+main{
+	background-color: #F6F7F9;
+}
+a{
+    text-decoration: none;
+    color: #13131399;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+}
+.top__left img{
+    margin-bottom: 25px;
+ 
+}
+.top__left p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #13131399;
+    font-weight: 500;
+
+}
+.top__right{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding-right: 100px;
+}
+.top__right__left{
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;
+}
+.top__right__left ul{
+    padding-left: 0px;
+}
+.top__right__left li{
+    margin-top: 20px;
+}
+.top__right__middle{
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;
+}
+.top__right__middle ul{
+    padding-left: 0px;
+}
+.top__right__middle li{
+    margin-top: 20px;
+}
+.top__right__right li{
+    margin-top: 20px;
+}
+.top__right__right{
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;
+}
+.top__right__right ul{
+    padding-left: 0px;
+}
+.right__title{
+    font-size: 20px;
+    line-height: 30px;
+    color: #1A202C;
+    margin-bottom:30px;
+}
+
+.footer__bottom{
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+padding-top: 35px;
+border-top: 1px solid #13131329;
+padding-bottom: 35px;
+}
+.bottom__left p{
+font-size: 16px;
+font-weight: 600;
+color: #1A202C;
+}
+.bottom__right ul{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.bottom__right ul a{
+    color: #1A202C;
+    font-size: 16px;
+    font-weight: 600;
+}

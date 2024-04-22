@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans";
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #F6F7F9;
+}
+
+.popular__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+
+.recomendation__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+
+.popular__title h5{
+    color: #90A3BF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.16px;
+}
+
+.recomendation__title h5{
+    color: #90A3BF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.16px;
+}
+
+.popular__title button{
+    background: transparent;
+    border: none;
+    color: #3563E9;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.16px;
+}
+
+.row{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card{
+    width: 304px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+.card__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card__title__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card__title__description h4{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -3%;
+}
+
+.card__title__description p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -2%;
+    color: #90A3BF;
+}
+
+.card__title__wishlist i{
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.card__image{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__image img{
+    width: 232px;
+}
+
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0px 4px;
+}
+
+.card__info div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.card__info i, p{
+    color: #90A3BF;
+}
+
+.card__info p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -2%;
+    margin-bottom: 0px;
+}
+
+.card__info i{
+    font-size: 16px;
+}
+
+.card__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+}
+
+.price p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.64px;
+    color: #90A3BF;
+    margin-bottom: 1px;
+    margin-left: 2px
+}
+
+.rent button{
+    background-color: #3563E9;
+    border: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+}
+
+.show{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.show button{
+    background-color: #3563E9;
+    border: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+}
