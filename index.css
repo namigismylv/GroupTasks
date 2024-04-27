@@ -26,22 +26,7 @@ main {
   margin-top: 40px;
 }
 
-.recomendation__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
-  margin-top: 30px;
-}
-
 .popular__title h5 {
-  color: #90a3bf;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20.16px;
-}
-
-.recomendation__title h5 {
   color: #90a3bf;
   font-size: 16px;
   font-weight: 600;
@@ -500,6 +485,9 @@ p {
   }
   .itemsicon {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
   .time h4 {
     font-weight: 700;

@@ -1,6 +1,7 @@
 const list = document.getElementById("list")
 let cars;
 let wishlistItems;
+let basketItems;
 if (localStorage.getItem("cars")) {
     cars = JSON.parse(localStorage.getItem("cars"))
 }
@@ -21,6 +22,13 @@ if (localStorage.getItem("id")) {
 else {
     id = 0;
     localStorage.setItem("id", JSON.stringify(id))
+}
+if (localStorage.getItem("basketItems")) {
+    basketItems = JSON.parse(localStorage.getItem("basketItems"))
+}
+else {
+    basketItems = []
+    localStorage.setItem("basketItems", JSON.stringify(basketItems))
 }
 const renderUI = (items) => {
     list.innerHTML = "";
@@ -64,7 +72,7 @@ const renderUI = (items) => {
                     <p>day</p>
                 </div>
                 <div class="rent">
-                <button class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i></button>
+                    <button onclick="addToBasket(${id})" class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i></button>
                     <button onclick="deleteHandler(${id})" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
@@ -100,13 +108,33 @@ const addToWishlist = (id) => {
     }
 }
 
-function deleteHandler(id){
-    let confirmDelete=confirm("Are you sure delete it?")
-    if(confirmDelete){
-        const target=cars.find(car=>car.id==id)
-        const indexOfTarget=cars.indexOf(target)
-        cars.splice(indexOfTarget,1)
-        localStorage.setItem("cars",JSON.stringify(cars))
+const addToBasket = (id) => {
+    const basketTarget = basketItems.find((x) => x.item.id == id)
+    if (!basketTarget){
+    const target = cars.find((car) => car.id == id)
+    let newBasketItem = {
+        item: target,
+        count: 1,
+        price: target.price,
+        totalPrice: target.price
+    }
+    basketItems.push(newBasketItem)
+    localStorage.setItem("basketItems",JSON.stringify(basketItems))
+    }
+    else {
+        basketTarget.count++
+        basketTarget.totalPrice = basketTarget.price * basketTarget.count
+        localStorage.setItem("basketItems", JSON.stringify(basketItems))
+    }
+}
+
+function deleteHandler(id) {
+    let confirmDelete = confirm("Are you sure delete it?")
+    if (confirmDelete) {
+        const target = cars.find(car => car.id == id)
+        const indexOfTarget = cars.indexOf(target)
+        cars.splice(indexOfTarget, 1)
+        localStorage.setItem("cars", JSON.stringify(cars))
         localStorage.setItem("id", JSON.stringify(id))
         renderUI(cars)
     }
@@ -114,11 +142,4 @@ function deleteHandler(id){
 }
 renderUI(cars)
 console.log(cars);
-
-
-
-
-
-
-
 

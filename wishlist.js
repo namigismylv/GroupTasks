@@ -1,6 +1,14 @@
 const list = document.getElementById("list")
 let cars;
 let wishlistItems;
+let basketItems;
+if (localStorage.getItem("basketItems")) {
+    basketItems = JSON.parse(localStorage.getItem("basketItems"))
+}
+else {
+    basketItems = []
+    localStorage.setItem("basketItems", JSON.stringify(basketItems))
+}
 if (localStorage.getItem("wishlistItems")) {
     wishlistItems = JSON.parse(localStorage.getItem("wishlistItems"))
 }
@@ -86,7 +94,7 @@ const renderUI = (items) => {
                         <p>day</p>
                     </div>
                     <div class="rent">
-                        <button class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button onclick="addToBasket(${id})" class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i></button>
                     </div>
                 </div>
             </div>
@@ -97,5 +105,25 @@ const renderUI = (items) => {
 
     }
 };
+
+const addToBasket = (id) => {
+    const basketTarget = basketItems.find((x) => x.item.id == id)
+    if (!basketTarget){
+    const target = cars.find((car) => car.id == id)
+    let newBasketItem = {
+        item: target,
+        count: 1,
+        price: target.price,
+        totalPrice: target.price
+    }
+    basketItems.push(newBasketItem)
+    localStorage.setItem("basketItems",JSON.stringify(basketItems))
+    }
+    else {
+        basketTarget.count++
+        basketTarget.totalPrice = basketTarget.price * basketTarget.count
+        localStorage.setItem("basketItems", JSON.stringify(basketItems))
+    }
+}
 
 renderUI(wishlistItems)
