@@ -85,3 +85,62 @@ form button:hover{
 #table button{
     padding: 5px 12px;
 }
+
+@media screen and (max-width:1400px){
+    form{
+        width: 45%;
+    }
+}
+@media screen and (max-width:1250px){
+    form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1120px){
+    form{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:980px){
+    form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:830px){
+    form{
+        width: 65%;
+    }
+}
+@media screen and (max-width:640px){
+    form{
+        width: 70%;
+    }
+}
+@media screen and (max-width:530px){
+    form{
+        width: 75%;
+    }
+   header .form-input{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:440px){
+    form{
+        width: 80%;
+    }
+   header .form-input{
+        width: 350px;
+    }
+}
+@media screen and (max-width:370px){
+    form{
+        width: 85%;
+    }
+   header .form-input{
+        width: 300px;
+    }
+}
